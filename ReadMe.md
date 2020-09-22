@@ -105,9 +105,9 @@ The implementation of the CSV action lists means that;
 
 ------------------------
 ```
-[Click]                         //Click on an element
-[Click Optional]                //Click on an element if it exists
-[Double Click]                  //Double click on an element
+[Click]             //Click on an element
+[Click Optional]    //Click on an element if it exists
+[Double Click]      //Double click on an element
 ```
 Requires:
 - Identifier Type
@@ -118,8 +118,8 @@ Equivalence: `driver.findElement(By.<IdentifierType>(<IdentifierValue>)).click()
 ------------------------
 
 ```
-[Field]					        //Send a value to a given element
-[Field Optional]		    	//Send a value to a given element if it exists
+[Field]             //Send a value to a given element
+[Field Optional]    //Send a value to a given element if it exists
 ```
 
 Requires:
@@ -132,7 +132,7 @@ Equivalence: `driver.findElement(By.<IdentifierType>(<IdentifierValue>)).sendKey
 ------------------------
 
 ```
-[Dynamics Field]               //Send a value to a given Dynamics dropdown field  
+[Dynamics Field]    //Send a value to a given Dynamics dropdown field  
 ```
 
 Requires:
@@ -145,7 +145,7 @@ NOTE: This is used for fields in Dynamics that use javascript dropdowns in order
 ------------------------
 
 ```
-[Field No Clear]               //Send a value to a given element without clearing the field first - Required for some fields in Dynamics
+[Field No Clear]    //Send a value to a given element without clearing the field first - Required for some fields in Dynamics
 ```
 
 Requires:
@@ -159,7 +159,7 @@ NOTE: This is used for fields in Dynamics that require the user to NOT clear the
 ------------------------
 
 ```
-[Navigate]					    //Navigate to the specified value (URL, Property or special function)
+[Navigate]          //Navigate to the specified value (URL, Property or special function)
 ```
 
 Requires:
@@ -180,7 +180,7 @@ Equivalence:
 ------------------------
 
 ```
-[Screenshot]                    //Take a screenshot of the existing page and label it using the value provided
+[Screenshot]        //Take a screenshot of the existing page and label it using the value provided
 ```
 
 Requires:
@@ -193,7 +193,7 @@ Naming convention is `<value>.<driverSessionID>.png`
 ------------------------
 
 ```
-[Assert Element Text]           //Assert that an element has the specified text (exact match only)
+[Assert Element Text]   //Assert that an element has the specified text (exact match only)
 ```
 
 Requires:
@@ -207,7 +207,7 @@ Equivalence:
 ------------------------
 
 ```
-[Assert Element]     //Assert a specific condition (value) against a specified element (Identifier Type/Value)
+[Assert Element]    //Assert a specific condition (value) against a specified element (Identifier Type/Value)
 ```
 
 Requires:
@@ -229,7 +229,7 @@ Equivalence:
 
 ------------------------
 ```
-[Switch To]                     //Switch the driver context to a Tab or Frame
+[Switch To]         //Switch the driver context to a Tab or Frame
 ```
 
 Requires:
@@ -249,7 +249,7 @@ Equivalence:
 ------------------------
 
 ```
-[Select]                        //Select a text option from a Select element (dropdown) on the page
+[Select]             //Select a text option from a Select element (dropdown) on the page
 ```
 
 Requires:
@@ -264,7 +264,7 @@ Equivalence:
 ------------------------
 
 ```
-[Wait]                          //Halts the execution of the test thread for X milliseconds
+[Wait]          //Halts the execution of the test thread for X milliseconds
 ```
 
 Requires:
@@ -291,7 +291,7 @@ Upload file functionality is skipped when running using the Browserstack ('bstac
 ------------------------
 
 ```
-[Set Today Plus]			    //Set a defined variable as a dynamic date
+[Set Today Plus]    //Set a defined variable as a dynamic date
 ```
 
 Requires:
@@ -313,7 +313,7 @@ Outcome: 6 usable variables containing the date-components targeting 2 days in t
 ------------------------
 
 ```
-[Close Tab]                     //Closes the current tab
+[Close Tab]             //Closes the current tab
 ```
 
 Requires no configuration.
@@ -321,7 +321,7 @@ Requires no configuration.
 ------------------------
 
 ```
-[Set Current Url]               //Creates a referencable variable containing the current URL
+[Set Current Url]       //Creates a referencable variable containing the current URL
 ```
 
 Requires:
@@ -331,7 +331,7 @@ Equivalence: `testContext.setVariable(<value>,driver.getCurrentUrl());`
 
 ------------------------
 ```
-[Set Element Text]              //Creates a referencable variable containing the text of a found element
+[Set Element Text]      //Creates a referencable variable containing the text of a found element
 ```
 
 Requires:
@@ -348,7 +348,7 @@ testContext.setVariable(value,elementText);
 ------------------------
 
 ```
-[Break Point]                     //A DEBUGGING-ONLY action that allows for breakpointing mid-CSV files. (DO NOT COMMIT THESE ACTION TO THE CODEBASE)
+[Break Point]           //A DEBUGGING-ONLY action that allows for breakpointing mid-CSV files. (DO NOT COMMIT THESE ACTION TO THE CODEBASE)
 ```
 
 Requires no configuration.
