@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.versatiletester.test.impl.app.GuessWhoCSV_Tests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 90.765 s - in com.versatiletester.test.impl.app.GuessWhoCSV_Tests
